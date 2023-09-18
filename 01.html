@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:#40BAED ;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .cont{
+                height: 130px;
+                width: 150px;
+                background-color: #070340;
+                display: inline-block;
+                margin-right: 20px; 
+                margin-bottom: 20px;
+                padding-top: 20px;
+                border-radius: 8px;
+            }
+            #main{
+                margin: 150px 270px;
+
+            }
+            .fip{
+                color: white;
+                font-size: 64px;
+            }
+            .sep{
+                color: white;
+                font-size: 16px;
+            }
+            .cont{
+                text-align: center;
+                
+            }
+            #er-msg{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                color: red;
+            }
+            .btn{
+                padding: 10px 20px;
+                margin: 20px;
+                margin-left: 0;
+                margin-right: 40px;
+                background-color: green;
+                border: none;
+                border-radius: 4px;
+                color: white;
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+                font-size: 16px;
+            }
+            input{
+                width: 50px;
+                padding: 10px 5px;
+                margin-top: 20px;
+                margin-left: 0;
+                margin-right: 40px;
+                border: none;
+                border-radius: 3px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="fi" class="cont">
+                <span class="fip" id="days">0</span><br>
+                <span class="sep">Days</span>
+
+            </div>
+            <div id="se" class="cont">
+                <span class="fip" id="hours">0</span><br>
+                <span class="sep">Hours</span>
+            </div>
+            <div id="th" class="cont">
+                <span class="fip" id="minutes">0</span><br>
+                <span class="sep">Minutes</span>
+            </div>
+            <div id="fo" class="cont">
+                <span class="fip" id="seconds">0</span><br>
+                <span class="sep">Seconds</span>
+            </div><br>
+            <span id="er-msg"></span><br>
+            <input type="text" placeholder="days" id="dy" oninput="clrmsg()">
+            <input type="text" placeholder="hours" id="hrs" oninput="clrmsg()">
+            <input type="text" placeholder="minutes" id="mins" oninput="clrmsg()">
+            <input type="text" placeholder="seconds" id="sss" oninput="clrmsg()"><br><br>
+            <button type="submit" id="btn1" class="btn" onclick="setVal()">Set Value</button>
+            <button type="submit" id="btn1" class="btn" onclick="start()">Start</button>
+            <button type="submit" id="btn1" class="btn" onclick="paus()">Pause</button>
+            <button type="submit" id="btn1" class="btn" onclick="res()">Resume</button>
+            <button type="submit" id="btn1" class="btn" onclick="resett()">Reset</button>
+        </div>
+
+        <script src="1.js"></script>
+    </body>
+</html>
